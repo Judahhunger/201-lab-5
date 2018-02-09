@@ -81,9 +81,14 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
-var sumOftestArray = sum(testArray[0], sum(testArray[1], testArray[2])[0])[0];
+  var sumOftestArray = sum(testArray[0], sum(testArray[1], testArray[2])[0])[0];
 var message = testArray + ' was passed in as an array of numbers, and ' + sumOftestArray + ' is their sum.'
 return [sumOftestArray, message];
+//////////// Same as above////////////// line 84*
+  // var sumOfTestArray = 0; for(var i = 0; i < testArray.length; i++){
+  //   sumOfTestArray = sum(sumOfTestArray, testArray[i])[0];
+////////////Same as above //////////////// line 84*
+// var sumOftestArray = sumAndMultiply(testArray[0], testArray[1], testArray[2])[0];
 }
 
 // TODO: Here is the test for sumArray(); uncomment it to run it
@@ -103,9 +108,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-var multiplyOfTestArray = multiply(testArray[0], multiply(testArray[1], testArray[2])[0])[0];
-var message = 'The numbers ' + testArray + ' have a product of ' + multiplyOfTestArray + '.'
-return [multiplyOfTestArray, message];
+  var multiplyOfTestArray = multiply(testArray[0], multiply(testArray[1], testArray[2])[0])[0];
+  var message = 'The numbers ' + testArray + ' have a product of ' + multiplyOfTestArray + '.'
+  return [multiplyOfTestArray, message];
+  //////////// Same as above//////////////////// line 111*
+  // var multiplyOfTestArray = 1; for(var i = 0; i < testArray.length; i++){
+  //   multiplyOfTestArray = multiply(multiplyOfTestArray, testArray[i])[0];
+  // }
+  ///////////// Same as above //////////////////// line 111*
+  // var multiplyOfTestArray = sumAndMultiply(testArray[0], testArray[1], testArray[2])[1]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
