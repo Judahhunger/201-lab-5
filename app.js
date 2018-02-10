@@ -83,7 +83,7 @@ var testArray = [2,3,4]; //eslint-disable-line
 function sumArray(testArray){ //eslint-disable-line
   var sumOfTestArray = sum(testArray[0], sum(testArray[1], testArray[2])[0])[0];
 //////////// Same as above////////////// line 84*
-//   var sumOfTestArray = 0; for(var i = 0; i < testArray.length; i++){
+//   var sumOfTestArray = 0; for(var i = 0; i < testArray.length; sum(i,i)[0]){
 //     sumOfTestArray = sum(sumOfTestArray, testArray[i])[0];
 // }
 ////////////Same as above //////////////// line 84*
